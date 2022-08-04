@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Manage</class>
+ <widget class="QWidget" name="Manage">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Управление строительным магазином</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icons/mainIcon.png</normaloff>icons/mainIcon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #5d5c60;</string>
+  </property>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>10</y>
+     <width>521</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="styleSheet">
+       <string notr="true">font-size: 14px; color: white;</string>
+      </property>
+      <property name="text">
+       <string>Выберете таблицу </string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="TableNameComboBox">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px; color: white;</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <item>
+       <property name="text">
+        <string>Клиенты</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Заказы</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Товары</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Сотрудники</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Должности</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QTableWidget" name="TableOfRecordWidget">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>120</y>
+     <width>751</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: white;
+
+</string>
+   </property>
+   <property name="sortingEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>100</y>
+     <width>160</width>
+     <height>281</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="vecticalButtonLayout">
+    <item>
+     <widget class="QPushButton" name="TapeFormButton">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #557a95; border: none;color: white;padding: 5px;text-align: center;  text-decoration: none;  font-size: 14px;
+outline: none;</string>
+      </property>
+      <property name="text">
+       <string>Ленточная форма</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="AddRecordButton">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #557a95; border: none;color: white;padding: 5px;text-align: center;  text-decoration: none;  font-size: 14px;
+outline: none;</string>
+      </property>
+      <property name="text">
+       <string>Добавить</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="DeleteRecordButton">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #557a95; border: none;color: white;padding: 5px;text-align: center;  text-decoration: none;  font-size: 14px;
+outline: none;</string>
+      </property>
+      <property name="text">
+       <string>Удалить</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="SearchRecordButton">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #557a95; border: none;color: white;padding: 5px;text-align: center;  text-decoration: none;  font-size: 14px;
+outline: none;</string>
+      </property>
+      <property name="text">
+       <string>Поиск</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="ComposeBarGraphButton">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #557a95; border: none;color: white;padding: 5px;text-align: center;  text-decoration: none;  font-size: 14px;
+outline: none;</string>
+      </property>
+      <property name="text">
+       <string>Гистограмма</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>11</y>
+     <width>161</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="FirstCellButton">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #7395ae;  border: none;  color: white;  padding: 5px;  text-align: center; text-decoration: none;  font-size: 14px;outline: none;</string>
+      </property>
+      <property name="text">
+       <string>Первая ячейка</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="LastCellButton">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #7395ae;  border: none;  color: white;  padding: 5px;  text-align: center; text-decoration: none;  font-size: 14px;outline: none;</string>
+      </property>
+      <property name="text">
+       <string>Последняя ячейка</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>11</y>
+     <width>160</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QPushButton" name="NextCellButton">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #7395ae;  border: none;  color: white;  padding: 5px;  text-align: center; text-decoration: none;  font-size: 14px;outline: none;</string>
+      </property>
+      <property name="text">
+       <string>Следующая ячейка</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="PreviousCellButton">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #7395ae;  border: none;  color: white;  padding: 5px;  text-align: center; text-decoration: none;  font-size: 14px;outline: none;</string>
+      </property>
+      <property name="text">
+       <string>Предыдущая ячейка</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_4">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>460</y>
+     <width>160</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <widget class="QPushButton" name="ComposeReportButton">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #557a95; border: none;color: white;padding: 5px;text-align: center;  text-decoration: none;  font-size: 14px;
+outline: none;</string>
+      </property>
+      <property name="text">
+       <string>Отчет</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="ReturnBackButton">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #557a95; border: none;color: white;padding: 5px;text-align: center;  text-decoration: none;  font-size: 14px;
+outline: none;</string>
+      </property>
+      <property name="text">
+       <string>Назад</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

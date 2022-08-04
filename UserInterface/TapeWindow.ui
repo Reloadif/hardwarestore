@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Tape</class>
+ <widget class="QWidget" name="Tape">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>513</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::PreventContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Ленточная форма</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icons/ribbon.png</normaloff>icons/ribbon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #5d5c60;</string>
+  </property>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>440</y>
+     <width>341</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="PreviousRecordButton">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #557a95;
+border: none;
+color: white;
+padding: 5px;
+text-align: center;
+text-decoration: none;
+font-size: 14px;
+outline: none;</string>
+      </property>
+      <property name="text">
+       <string>Назад</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="NextRecordButton">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #557a95;
+border: none;
+color: white;
+padding: 5px;
+text-align: center;
+text-decoration: none;
+font-size: 14px;
+outline: none;</string>
+      </property>
+      <property name="text">
+       <string>Вперед</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>10</y>
+     <width>341</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="MainTapeLayout"/>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
